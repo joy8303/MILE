@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/txtMile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="英哩"
+        android:textColor="#0000FF"
+        android:textSize="20sp"/>
+
+    <EditText android:id="@+id/edtMile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#0000FF"
+        android:hint="請輸入球速"
+        android:inputType="number"
+        android:layout_below="@+id/txtMile">
+        <requestFocus />    //強制取得輸入點
+    </EditText>
+
+    <TextView android:id="@+id/txtKm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtMile"
+        android:textSize="20sp"
+        android:textColor="#0000FF"/>
+
+    <Button android:id="@+id/btnTran"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtKm"
+        android:text="轉換"/>
+
+</RelativeLayout>
