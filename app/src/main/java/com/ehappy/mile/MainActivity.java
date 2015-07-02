@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
             double km=1.61*miles;
             txtKm.setText("時速=" + km+"公里");
             if (miles==0 || miles<0)
-            Toast.makeText(v.getContext(), "顯示錯誤", Toast.LENGTH_LONG).show();
+            Toast.makeText(v.getContext(), "顯示錯誤", Toast.LENGTH_LONG).show(); //LONG 改為 SHORT 則顯示的結果會慢慢出現...
         }
     };
     @Override
